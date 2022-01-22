@@ -124,77 +124,73 @@ window.onload = (ev) => {
 };
 
 function daily() {
-  document.querySelector('.daily-toggle').classList.add("active");
-  document.querySelector('.weekly-toggle').classList.remove("active");
-  document.querySelector('.monthly-toggle').classList.remove("active");
-
-  console.log('working')
+  document.querySelector(".daily-toggle").classList.add("active");
+  document.querySelector(".weekly-toggle").classList.remove("active");
+  document.querySelector(".monthly-toggle").classList.remove("active");
   // Work
-  workDuration.textContent = data[0].timeframes.daily.current + 'hrs';
+  workDuration.textContent = data[0].timeframes.daily.current + "hrs";
   workPrevious.textContent = "Previous day - " + data[0].timeframes.daily.previous + "hrs";
   // Play
-  playDuration.textContent = data[1].timeframes.daily.current + 'hrs';
+  playDuration.textContent = data[1].timeframes.daily.current + "hrs";
   playPrevious.textContent = "Previous day - " + data[1].timeframes.daily.previous + "hrs";
   // Study
-  studyDuration.textContent = data[2].timeframes.daily.current + 'hrs';
+  studyDuration.textContent = data[2].timeframes.daily.current + "hrs";
   studyPrevious.textContent = "Previous day - " + data[2].timeframes.daily.previous + "hrs";
   // Exercise
-  exerciseDuration.textContent = data[3].timeframes.daily.current + 'hrs';
+  exerciseDuration.textContent = data[3].timeframes.daily.current + "hrs";
   exercisePrevious.textContent = "Previous day - " + data[3].timeframes.daily.previous + "hrs";
   // Social
-  socialDuration.textContent = data[4].timeframes.daily.current + 'hrs';
+  socialDuration.textContent = data[4].timeframes.daily.current + "hrs";
   socialPrevious.textContent = "Previous day - " + data[4].timeframes.daily.previous + "hrs";
   // Self-care
-  selfCareDuration.textContent = data[5].timeframes.daily.current + 'hrs';
+  selfCareDuration.textContent = data[5].timeframes.daily.current + "hrs";
   selfCarePrevious.textContent = "Previous day - " + data[5].timeframes.daily.previous + "hrs";
 }
 
 function weekly() {
-  document.querySelector('.daily-toggle').classList.remove("active");
-  document.querySelector('.weekly-toggle').classList.add("active");
-  document.querySelector('.monthly-toggle').classList.remove("active");
-  console.log('working')
+  document.querySelector(".daily-toggle").classList.remove("active");
+  document.querySelector(".weekly-toggle").classList.add("active");
+  document.querySelector(".monthly-toggle").classList.remove("active");
   // Work
-  workDuration.textContent = data[0].timeframes.weekly.current + 'hrs';
+  workDuration.textContent = data[0].timeframes.weekly.current + "hrs";
   workPrevious.textContent = "Previous week - " + data[0].timeframes.weekly.previous + "hrs";
   // Play
-  playDuration.textContent = data[1].timeframes.weekly.current + 'hrs';
+  playDuration.textContent = data[1].timeframes.weekly.current + "hrs";
   playPrevious.textContent = "Previous week - " + data[1].timeframes.weekly.previous + "hrs";
   // Study
-  studyDuration.textContent = data[2].timeframes.weekly.current + 'hrs';
+  studyDuration.textContent = data[2].timeframes.weekly.current + "hrs";
   studyPrevious.textContent = "Previous week - " + data[2].timeframes.weekly.previous + "hrs";
   // Exercise
-  exerciseDuration.textContent = data[3].timeframes.weekly.current + 'hrs';
+  exerciseDuration.textContent = data[3].timeframes.weekly.current + "hrs";
   exercisePrevious.textContent = "Previous week - " + data[3].timeframes.weekly.previous + "hrs";
   // Social
-  socialDuration.textContent = data[4].timeframes.weekly.current + 'hrs';
+  socialDuration.textContent = data[4].timeframes.weekly.current + "hrs";
   socialPrevious.textContent = "Previous week - " + data[4].timeframes.weekly.previous + "hrs";
   // Self-care
-  selfCareDuration.textContent = data[5].timeframes.weekly.current + 'hrs';
+  selfCareDuration.textContent = data[5].timeframes.weekly.current + "hrs";
   selfCarePrevious.textContent = "Previous week - " + data[5].timeframes.weekly.previous + "hrs";
 }
 
 function monthly() {
-  document.querySelector('.daily-toggle').classList.remove("active");
-  document.querySelector('.weekly-toggle').classList.remove("active");
-  document.querySelector('.monthly-toggle').classList.add("active");
-  console.log('working')
+  document.querySelector(".daily-toggle").classList.remove("active");
+  document.querySelector(".weekly-toggle").classList.remove("active");
+  document.querySelector(".monthly-toggle").classList.add("active");
   // Work
-  workDuration.textContent = data[0].timeframes.monthly.current + 'hrs';
+  workDuration.textContent = data[0].timeframes.monthly.current + "hrs";
   workPrevious.textContent = "Previous month - " + data[0].timeframes.monthly.previous + "hrs";
   // Play
-  playDuration.textContent = data[1].timeframes.monthly.current + 'hrs';
+  playDuration.textContent = data[1].timeframes.monthly.current + "hrs";
   playPrevious.textContent = "Previous month - " + data[1].timeframes.monthly.previous + "hrs";
   // Study
-  studyDuration.textContent = data[2].timeframes.monthly.current + 'hrs';
+  studyDuration.textContent = data[2].timeframes.monthly.current + "hrs";
   studyPrevious.textContent = "Previous month - " + data[2].timeframes.monthly.previous + "hrs";
   // Exercise
-  exerciseDuration.textContent = data[3].timeframes.monthly.current + 'hrs';
+  exerciseDuration.textContent = data[3].timeframes.monthly.current + "hrs";
   exercisePrevious.textContent = "Previous month - " + data[3].timeframes.monthly.previous + "hrs";
   // Social
-  socialDuration.textContent = data[4].timeframes.monthly.current + 'hrs';
+  socialDuration.textContent = data[4].timeframes.monthly.current + "hrs";
   socialPrevious.textContent = "Previous month - " + data[4].timeframes.monthly.previous + "hrs";
   // Self-care
-  selfCareDuration.textContent = data[5].timeframes.monthly.current + 'hrs';
+  selfCareDuration.textContent = data[5].timeframes.monthly.current + "hrs";
   selfCarePrevious.textContent = "Previous month - " + data[5].timeframes.monthly.previous + "hrs";
 }
