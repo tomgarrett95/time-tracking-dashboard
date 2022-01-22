@@ -48,8 +48,8 @@ I was refreshing to go back to using custom CSS after using TailwindCSS for a lo
 
 ## Author
 
-- Website - [Add your name here](https://tomgarrett95.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tomgarrett95)
+- Website - [Tom Garrett](https://tomgarrett95.github.io/)
+- Frontend Mentor - [@tomgarrett95](https://www.frontendmentor.io/profile/tomgarrett95)
 
 
 ## Acknowledgments
