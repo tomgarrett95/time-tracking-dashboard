@@ -9,11 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <script src="./js/script.js" async></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
@@ -28,9 +24,9 @@
         </div>
       </div>
       <div class="profile-time">
-        <h2>Daily</h2>
-        <h2>Weekly</h2>
-        <h2>Monthly</h2>
+        <button class="daily-toggle" type="button">Daily</button>
+        <button class="weekly-toggle" type="button">Weekly</button>
+        <button class="monthly-toggle" type="button">Monthly</button>
       </div>
     </div>
 
@@ -40,8 +36,8 @@
       <div class="info">
         <p class="category">Work</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration work-duration"></p>
+        <p class="previous work-previous"></p>
       </div>
     </div>
 
@@ -51,8 +47,8 @@
       <div class="info">
         <p class="category">Play</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration play-duration"></p>
+        <p class="previous play-previous"></p>
       </div>
     </div>
   
@@ -62,8 +58,8 @@
       <div class="info">
         <p class="category">Study</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration study-duration"></p>
+        <p class="previous study-previous"></p>
       </div>
     </div>
 
@@ -73,8 +69,8 @@
       <div class="info">
         <p class="category">Exercise</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration exercise-duration"></p>
+        <p class="previous exercise-previous"></p>
       </div>
     </div>
 
@@ -84,8 +80,8 @@
       <div class="info">
         <p class="category">Social</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration social-duration"></p>
+        <p class="previous social-previous"></p>
       </div>
     </div>
 
@@ -95,15 +91,15 @@
       <div class="info">
         <p class="category">Self-care</p>
         <img class="menu" src="./images/icon-ellipsis.svg" alt="Menu">
-        <p class="duration">2hrs</p> <!-- weekly -->
-        <p class="previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="duration self-care-duration"></p>
+        <p class="previous self-care-previous"></p>
       </div>
     </div>
 
   </main>
    
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  
     Coded by <a href="tomgarrett.github.io">Tom Garrett</a>.
   </footer>
 

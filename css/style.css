@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-size: 18px;
 }
 
@@ -25,9 +25,8 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2vmin;
-    padding: 5rem;
-    height: 95%;
+    gap: 3vmin;
+    padding: 5rem 2rem;
 }
 
 .profile {
@@ -71,6 +70,23 @@ main {
     justify-content: space-around;
 }
 
+button {
+    background: none;
+    color: hsl(235, 45%, 61%);
+    border: none;
+    padding: 0;
+    font-weight: 300;
+    cursor: pointer;
+    outline: inherit;
+    width: fit-content;
+}
+
+button:hover,
+button:focus,
+button.active {
+    color: hsl(0, 0%, 100%);
+}
+
 .card {
     border-radius: 2.5vmin;
     display: grid;
@@ -96,6 +112,11 @@ main {
     padding: 1.5rem;
 }
 
+.info:hover {
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+
 .category {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
@@ -106,6 +127,11 @@ main {
     grid-row: 1 / span 1;
     grid-column: 2 / -1;
     place-self: center end;
+}
+
+.menu:hover {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
 }
 
 .duration {
@@ -133,7 +159,7 @@ main {
     background: hsl(15, 100%, 70%) url(../images/icon-work.svg) no-repeat right top;
 }
 
-.play{
+.play {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
 }
@@ -177,3 +203,111 @@ main {
 .self-care-icon {
     background: hsl(43, 84%, 65%) url(../images/icon-self-care.svg) no-repeat right top;
 }
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    padding-bottom: 1rem;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 1106px) {
+
+    main {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 2rem;
+    }
+    
+    .profile {
+        grid-column: 1 / -1;
+        grid-row: 1 / span 1;
+    }
+    
+    .profile-details {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .profile-picture {
+        width: 30%;
+    }
+    
+    .name {
+        font-size: 2.25rem;
+    }
+    
+    .profile-time {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .work {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .play {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .study {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .exercise {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .social {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    .self-care {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5vmin;
+    }
+
+    .profile-picture {
+        height: 100%;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+    
+    .duration {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        font-size: 2rem;
+    }
+    
+    .previous {
+        grid-row: 2 / -1;
+        grid-column: 2 / -1;
+        place-self: center end;
+        font-size: 0.9rem;
+    }
+} 
